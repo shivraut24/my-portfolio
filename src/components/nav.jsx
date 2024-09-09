@@ -52,7 +52,7 @@ const Nav = () => {
           <img src={Logo} alt="" className='md:h-16 md:w-16 w-10 h-10 rounded-full' />
         </div>
         <div className='md:hidden'>
-          <FaBars onClick={openDrawer} className='cursor-pointer bg-red-500 p-2 rounded text-white h-8 w-8' />
+        <i onClick={openDrawer} class="fa-solid fa-bars cursor-pointer bg-red-500 p-2 rounded text-white h-8 w-8"></i>
         </div>
         <div className='hidden md:flex gap-10 list-none'>
           <li onClick={handleHomeNavigate} className='cursor-pointer hover:text-red-500'>Home</li>
@@ -79,7 +79,7 @@ const Nav = () => {
       >
         <div className='flex justify-between items-center p-4 bg-myColor-navcolor'>
           <img src={Logo} alt="Logo" className='h-12 w-12 rounded-full' />
-          <FaTimes onClick={closeDrawer} className='cursor-pointer text-black h-8 w-8' />
+          <i class="fa-solid fa-x  cursor-pointer text-black h-8 w-8" onClick={closeDrawer}></i>
         </div>
         <div className='flex flex-col p-4'>
           <li onClick={handleHomeNavigate} className='list-none cursor-pointer py-2 hover:text-red-500'>Home</li>
